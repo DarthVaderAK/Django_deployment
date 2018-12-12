@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Template Inheritane</title>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="cointainer">
+        <ul class="nav navbar-nav">
+          <li><a class="navbar-brand" href="#">BRAND</a></li>
+          <li><a class="navbar-link" href="#">ADMIN</a></li>
+          <li><a class="navbar-link" href="#">USERS</a></li>
+        </ul>
+      </div>
+    </nav>
+<div class="container">
+  {% block body_block %}
+
+    <!-- anything outside this div coinatiner will be inherited-->
+
+  {% endblock %}
+
+
+</div>
+  </body>
+</html>
